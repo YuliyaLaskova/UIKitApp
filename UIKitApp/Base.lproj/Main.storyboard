@@ -41,10 +41,10 @@
                                             <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Klx-Ng-wSR"/>
                                         </connections>
                                     </slider>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-KC-U2S">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-KC-U2S">
                                         <rect key="frame" x="0.0" y="201.5" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZC-rh-bDA">
                                         <rect key="frame" x="0.0" y="275.5" width="288" height="31"/>
@@ -53,6 +53,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Done">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7O-KX-7Cx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,6 +72,7 @@
                         <outlet property="mainLabel" destination="9sL-Ie-YpE" id="8QN-Lb-QHO"/>
                         <outlet property="segmentedControll" destination="6va-wU-pnS" id="tNf-Ax-aS7"/>
                         <outlet property="slider" destination="xVg-PT-ESr" id="BRl-wb-JOQ"/>
+                        <outlet property="textField" destination="mm1-KC-U2S" id="gyF-aY-s2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
